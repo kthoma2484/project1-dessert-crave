@@ -1,0 +1,317 @@
+body {
+    background-image: url("../images/Alldessertsimage.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    padding: 30px;
+}
+
+.row {
+    margin-bottom: 30px;
+}
+
+.title {
+    font-family: 'Pacifico', 'Satisfy', 'cursive', sans-serif;
+    font-display: fallback;
+    text-shadow: 3px 3px rgb(20, 27, 121);
+    font-size: 80px;
+}
+
+.subtitle {
+    font-family: 'Caveat', 'Satisfy', 'cursive', sans-serif;
+    font-display: fallback;
+    font-size: 40px;
+}
+
+.title-label {
+    text-shadow: 2px 2px rgb(20, 27, 121);
+    color: lightskyblue;
+    z-index: 1;
+    text-align: center;
+}
+
+.summary,
+.form-text {
+    text-align: justify;
+    z-index: 1;
+    background-color: rgba(163, 165, 154, 0.8);
+    text-shadow: 2px 2px black;
+    color: rgb(33, 150, 189);
+    font-weight: 600;
+    margin: 20px;
+}
+
+.form-text {
+    font-family: 'Signika', 'Satisfy', 'cursive', sans-serif;
+    font-display: fallback;
+    font-size: 26px;
+    padding: 30px;
+}
+
+.summary {
+    font-family: 'Satisfy', 'cursive', sans-serif;
+    font-display: fallback;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.button-bkgd {
+    background-color: none;
+    font-family: 'Satisfy', 'cursive', sans-serif;
+    font-display: fallback;
+    font-size: 20px;
+}
+
+#stay-hidden,
+#hide,
+#hide-one,
+#hide-two,
+#hide-three,
+#hide-four, 
+#hide-five,
+#hide-six  {
+    display: none;
+}
+
+/* -----------------------Results Page Specific CSS---------------*/
+
+.results-bkgd {
+    background-image: url("../images/Alldessertsimage.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.result-pg {
+    background-color: rgba(163, 165, 154, 0.8);
+    background-image: none;
+}
+
+.results-table {
+    font-size: 24px;
+}
+
+.theight {
+    overflow: auto;
+    max-height: 700px;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+/* -----------------------Single Result Page Specific CSS---------------*/
+
+.single-result-bkgd {
+    background-image: url("../images/Alldessertsimage.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.single-result-pg {
+    background-color: rgba(163, 165, 154, 0.8);
+    background-image: none;
+}
+
+#dessert-search,
+.single-pick {
+    color: lightskyblue;
+    text-decoration: underline;
+}
+
+
+/* desktop*/
+
+@media screen and (max-width: 980px) {
+    .body {
+        width: 100%;
+    }
+    .row {
+        width: 100%;
+    }
+    .title {
+        width: 100%;
+        font-size: 50px;
+    }
+    .summary {
+        width: 100%;
+        font-size: 30px;
+    }
+    .form-text {
+        width: 100%;
+        font-size: 25px;
+    }
+    .title-label {
+        width: 100%;
+    }
+    .subtitle {
+        width: 100%;
+        font-size: 40px;
+    }
+    .button-bkgd {
+        width: 100%;
+    }
+    /* for results page */
+    .form-text {
+        width: 100%;
+        font-size: 25px;
+    }
+    .result-pg {
+        width: 100%;
+    }
+    #results-table {
+        width: 100%;
+    }
+    /* for singleresults page */
+    .form-text {
+        width: 100%;
+        font-size: 25px;
+    }
+    .single-result-pg {
+        width: 100%;
+    }
+    .single-pick {
+        width: 100%;
+    }
+}
+
+/* tablet */
+
+@media screen and (max-width: 768px) {
+    .body {
+        width: 100%;
+    }
+
+    .row {
+        width: 100%;
+    }
+    .title {
+        width: 100%;
+        font-size: 80px;
+    }
+    .form-text {
+        width: 100%;
+        font-size: 17px;
+    }
+    .title-label {
+        width: 100%;
+    }
+    .subtitle {
+        width: 100%;
+    }
+    .button-bkgd {
+        width: 100%;
+    }
+    /* ---------------for results page ----------------- */
+    .results-bkgd {
+        width: 100%;
+    }
+    .result-pg {
+        width: 100%;
+    }
+    #results-table {
+        width: 100%;
+    }
+    /* ---------------for singleresults page ----------- */
+    .summary {
+        width: 100%;
+        font-size: 24px;
+    }
+    p.title {
+        width: 100%;
+        /* font-size: 45px; */
+    }
+    .form-text {
+        width: 100%;
+        font-size: 24px;
+    }
+    .results-table {
+        font-size: 17px;
+    }
+}
+
+
+/*phone*/
+
+@media screen and (max-width: 450px) {
+    /* .body {
+        width: 100%;
+    }
+    .row {
+        width: 100%;
+    } */
+    .title {
+        width: 100%;
+        font-size: 100px;
+    }
+    .form-text {
+        width: 100%;
+        font-size: 17px;
+    }
+    .title-label {
+        width: 100%;
+    }
+    .subtitle {
+        width: 100%;
+    }
+    .button-bkgd {
+        width: 100%;
+    }
+    /* ---------------for results page ----------------- */
+
+    .results-bkgd {
+        width: 100%;
+    }
+    .result-pg {
+        width: 100%;
+    }
+    #results-table {
+        width: 100%;
+    }
+     /* ---------------for singleresults page ----------- */
+    .summary {
+        width: 100%;
+        font-size: 17px;
+    }
+    p.title {
+        width: 100%;
+        font-size: 45px;
+    }
+    .form-text {
+        width: 100%;
+        font-size: 17px;
+    }
+    .results-table {
+        font-size: 13px;
+    }
+}
+
+/* -----------------------END- Responsive CSS Beginning for all pages - END ---------------*/
+
+#ingredients,
+#recipe-link {
+    color: lightskyblue;
+}
+
+/*---------------------Responsive Design Section for all pages (Ericka)-------------*/
+
+/* ------------------------ Other Comments below ---------------- 
+
+
+/* ------------------------ Other Comments below 
+Font families
+font-family: 'Pacifico', cursive;
+font-family: 'Signika', sans-serif;
+font-family: 'Satisfy', cursive;
+font-family: 'Handlee', cursive;
+font-family: 'Caveat', cursive;
+https://fonts.googleapis.com/css?family=Caveat|Handlee|Pacifico|Satisfy|Signika
+
+
+
+improvements:
+
+fixed responsiveness inside the table / adjust scroll feature
+possible p.title conflict 
+    needs clean up for excess title .px 
+
+
+*/

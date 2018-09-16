@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dessert Results</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Handlee|Pacifico|Satisfy|Signika" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="javascript/app2.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script>
+    </script>
+</head>
+
+<body>
+
+    <div class="container results-div">
+
+        <div class="row title-label result-pg">
+            <div class="col-sm-12">
+                <p class="title">We've found some tasty treats just for you!</p>
+            </div>
+        </div>
+
+        <div class="row summary">
+            <div class="col-sm-12">
+                <p> Below are the results from your search, we've selected the top 20 that best matched your search criteria
+                    for
+                    <span id="dessert-search"></span>.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="row summary theight">
+            <div class="col-sm-12 no-results">
+                <table class="table" id="results-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Dessert Name</th>
+                            <th scope="col">Rating (5 star based)</th>
+                            <th scope="col">Prep &amp; Cook Time (HH:mm)</th>
+                            <th scope="col">Dessert Photo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row button-bkgd">
+            <button id="reset">Reset Search</button>
+        </div>
+
+        <div class="button-bkgd" style="text-align:center;justify-content:space-evenly;position:relative;bottom:0;">
+            <audio autoplay id="page-audio" src="audio/Pure Imagination.mp3" type="audio/mp3"></audio>
+            <button class="play-audio" type="button">Play Audio</button>
+            <button class="pause-audio" type="button">Pause Audio</button>
+        </div>
+        
+    </div>
+</body>
+
+</html>

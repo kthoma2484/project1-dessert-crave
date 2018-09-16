@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dessert Crave</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Handlee|Pacifico|Satisfy|Signika" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="javascript/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container page-bkgd">
+
+        <div class="row title-label">
+            <div class="col-sm-12">
+                <p class="title">Dessert Crave</p>
+                <p class="subtitle">The dessert suggestion application</p>
+            </div>
+        </div>
+
+        <div class="row summary">
+            <div class="col-sm-12">
+                <p style="text-align:center;"> Got a sweet tooth? Wanna try a new dessert? Well you're in the right place for it. Search the name of a dessert
+                    below for recipes and instructional videos on how to make it. Alternatively, select options below and
+                    we'll fine some of the top desserts out there based on your search criteria. Let's get started and satisfy
+                    that dessert crave!
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row form-text" id="intro-question">
+
+            <div class="col-sm-12">
+                <label class="form-check-label" for="dessertRadios0" style="text-decoration:underline;">How would you like to search for a dessert?</label>
+                <br>
+                <input class="form-check-input" type="radio" name="radio1" id="enter-name" value="option0">Enter the name of a specific dessert.</input>
+                <br>
+                <input class="form-check-input" type="radio" name="radio2" id="criteria-search" value="option0">Select criteria to request a category search by type and flavor.</input>
+
+            </div>
+
+        </div>
+
+        <form class="row form-text option-one" id="hide-one">
+
+            <div class="row">
+                <div>
+                    <label for="dessert-name">Enter the name of a specific dessert name and press "enter" button to search:</label>
+                </div>
+                <input type="text" class="form-control" id="dessert-name" name="dessert-name"></input>
+            </div>
+
+            <div class="row button-bkgd enter-textdiv" id="hide-four">
+                <div class="col-sm-12">
+                    <input type="submit" id="enter-text" value="Enter">
+                </div>
+            </div>
+
+        </form>
+
+        <form class="row form-text option-two" id="hide-two">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <p style="text-decoration:underline;">Complete all three fields below to begin and press "enter" button to search:</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label class="form-check-label" for="dessertRadios1">What type of dessert are you searching for?</label>
+                            <br>
+                            <input class="form-check-input" type="radio" name="dessert-type" value="cake">Cake</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="dessert-type" value="cookies">Cookies</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="dessert-type" value="custard">Custard</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="dessert-type" value="cupcakes">Cupcakes</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="dessert-type" value="pies">Pies</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="dessert-type" value="puddings">Puddings</input>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label class="form-check-label" for="dessertRadios2">What flavor would you like your dessert?</label>
+                            <br>
+                            <input class="form-check-input" type="radio" name="flavor" value="chocolate">Chocolate</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="flavor" value="vanilla">Vanilla</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="flavor" value="lemon">Lemon</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="flavor" value="cream-cheese">Cream Cheese</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="flavor" value="peanut-butter">Peanut Butter</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="flavor" value="apple">Apple</input>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row button-bkgd enter-criteriadiv" id="hide-five">
+                <div class="col-sm-12">
+                        <input type="submit" id="enter-criteria" value="Enter">
+                    </div>
+            </div>
+
+        </form>
+
+        <form class="row form-text submit-form" id="hide-three" action="resultpg.html" method="GET">
+            <div class="col-sm-12">
+                <p>We've got what you're looking for! Press submit to see your desserts!</p>
+                <div class="search-term">
+                    <input type="text" class="form-control" id="stay-hidden" name="q"></input>
+                </div>
+            </div>
+            <div class="row button-bkgd submit-div">
+                <div class="col-sm-12">
+                    <button id="submit">Submit</button>
+                </div>
+            </div>
+
+        </form>
+
+        <div class="row button-bkgd reset-div" id="hide-six">
+            <div class="col-sm-12">
+                <button id="reset">Reset Search</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<!-- Code to add a possible future update:
+       <div class="col-sm-4">
+                            <label class="form-check-label" for="dessertRadios3">What is your preferred max prep and cook time?</label>
+                            <br>
+                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="900">10 mins</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="1800">30 mins</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="2700">45 mins</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="3600">60 mins</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="7200">120 mins</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="">Anytime</input>
+                            <br>
+                        </div>
+
+-->
