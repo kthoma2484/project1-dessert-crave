@@ -2,6 +2,7 @@ body {
     background-image: url("../images/Alldessertsimage.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
+    background-size: cover;
     padding: 30px;
 }
 
