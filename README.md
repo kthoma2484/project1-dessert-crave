@@ -1,8 +1,8 @@
-# project-1
-First Group Project
+Dessert Crave
+This is a dessert recipe/suggestion app. The user may either enter the name of a dessert they want the recipe for or select general categories for a dessert suggestion. The app will populate the top rated recipes via the Yummly API. Once the user selects a recipe, they're taken to a new page that lists the ingredients, link, and related YouTube video for that particular dessert selection. Two APIs are utilized (Yummly and YouTube), to perform the user searches for recipes and related videos.
 
-This is a dessert recipe/suggestion app. The user may either enter the name of a dessert they want the recipe for or select general categories for a dessert suggestion. The app will populate the top rated recipes via the yummly api. Once the user selects a recipe, they're taken to a new page that lists the ingredients, link, and related youtube video for that particular dessert selection. 
+Application Highlights:
+* Multiple API utilization - The search is initially made with the Yummly API. Once a search item is selected, another search is made using the YouTube API. 
+* Multiple Page Website - Redirection and the transfer of search data is performed using jQuery. 
 
-The purpose of this app is to provide a quick and easy recipe search to the user without the need for an extensive search and multiple selector options as is seen with most recipe apps. It's strickly about getting you a dessert and a bit of instructional video on how to make versions of the dessert or reviews about the dessert itself.
-
-link: https://erickagithub.github.io/project-1/
+Link: https://kthoma2484.github.io/project1-dessert-crave/
